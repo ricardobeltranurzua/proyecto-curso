@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Apellido Paterno:</strong>
+  <%= @estudiante.app_paterno %>
+</p>
+
+<p>
+  <strong>Apellido Materno:</strong>
+  <%= @estudiante.app_materno %>
+</p>
+
+<p>
+  <strong>Curso:</strong>
+  <%= @estudiante.curso.nombre %>
+</p>
+
+<%= link_to 'Editar', edit_estudiante_path(@estudiante) %> |
+<%= link_to 'Atrás', estudiantes_path %>
